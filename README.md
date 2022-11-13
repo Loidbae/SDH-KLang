@@ -19,7 +19,7 @@ Gamescope lacks the ability to change layouts for external keyboards, so by writ
 
 ``<variant>`` is retrieved by getting a list of available variants ``localectl list-x11-keymap-variants <layout>``
 
-And that's exacly how this plugin works. Yes it's a bit boring and a dry read but I wanted to keep things as clear as possilbe.
+And that's exacly how this plugin works. Yes it's a bit boring and a dry read but I wanted to keep things as clear as possible.
 
 ## Screenshots
 
