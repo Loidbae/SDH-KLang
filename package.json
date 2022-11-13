@@ -1,7 +1,7 @@
 {
   "name": "decky-plugin-klang",
-  "version": "1.0.0",
-  "description": "A plugin that lets the user change language and layout of an external keyboard.",
+  "version": "1.0.1",
+  "description": "A plugin that lets the user change layout and variant of an external keyboard IN GAMING MODE.for example (QWERTY to QWERTZ).",
   "scripts": {
     "build": "shx rm -rf dist && rollup -c",
     "watch": "rollup -c -w",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SteamDeckHomebrew/decky-plugin-template.git"
+    "url": "git+https://github.com/Loidbae/SDH-KLang.git"
   },
   "keywords": [
     "decky",
@@ -18,12 +18,12 @@
     "steam-deck",
     "deck"
   ],
-  "author": "Jonas Dellinger <jonas@dellinger.dev>",
-  "license": "BSD-3-Clause",
+  "author": "Loidbae <loidbae@gmail.com>",
+  "license": "GNU-3",
   "bugs": {
-    "url": "https://github.com/SteamDeckHomebrew/decky-plugin-template/issues"
+    "url": "https://github.com/Loidbae/SDH-KLang/issues"
   },
-  "homepage": "https://github.com/SteamDeckHomebrew/decky-plugin-template#readme",
+  "homepage": "https://github.com/Loidbae/SDH-KLang#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-json": "^4.1.0",

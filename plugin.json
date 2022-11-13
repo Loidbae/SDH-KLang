@@ -4,7 +4,7 @@
   "flags": ["root"],
   "publish": {
     "tags": ["keyboard", "root", "utility"],
-    "description": "Decky example plugin.",
-    "image": "https://opengraph.githubassets.com/1/SteamDeckHomebrew/PluginLoader"
+    "description": "A plugin that lets the user change layout and variant of an external keyboard IN GAMING MODE.for example (QWERTY to QWERTZ).",
+    "image": "https://raw.githubusercontent.com/Loidbae/SDH-KLang/master/assets/menu.jpg"
   }
 }

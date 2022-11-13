@@ -1,6 +1,6 @@
-# KLang!
-
-KLang! - **K**eyboard **L**ayout and V**a**riation Cha**ng**er is a plugin for [decky-loader](https://github.com/SteamDeckHomebrew/deckly-loader) which lets the user change layout and variant of external keyboards.
+<img src="https://raw.githubusercontent.com/Loidbae/SDH-KLang/master/assets/logo.png" width="64" alt="" title="klang Logo"> KLang!
+---
+KLang! - **K**eyboard **L**ayout and V**a**riation Cha**ng**er is a plugin for [decky-loader](https://github.com/SteamDeckHomebrew/deckly-loader) which lets the user change layout and variant of external keyboards IN GAMING MODE.
 
 ## Why does this exist?
 

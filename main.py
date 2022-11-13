@@ -1,13 +1,13 @@
 import logging
 import shutil
 import os
+import getpass
+from helpers import get_user
 from subprocess import check_output
 
-BACKUP_PATH = "/home/deck/homebrew/keyboard/backup/"
-PLUGIN_OPTIONS_PATH = "/home/deck/homebrew/keyboard/"
-LOG_PATH = "/home/deck/homebrew/keyboard/log/"
 ENV_PATH = "/etc/environment"
-BACKUP_ENV = "/home/deck/homebrew/keyboard/backup/environment"
+
+LOG_PATH = "/home/deck/homebrew/keyboard/log/"
 
 KB_LAYOUT_FIELD = "XKB_DEFAULT_LAYOUT"
 KB_VARIANT_FIELD = "XKB_DEFAULT_VARIANT"
@@ -19,6 +19,12 @@ logging.basicConfig(filename=LOG_PATH+"keyboard.log",
                     force=True)
 logger=logging.getLogger()
 logger.setLevel(logging.INFO) # can be changed to logging.DEBUG for debugging issues
+
+def get_user_home() -> str:
+    return f"/home/{get_user()}"
+
+def _get_plugin_settings_path() -> str:
+    return f"{get_user_home()}/homebrew/"
 
 def _write_to_env(lines):
     try:
@@ -177,13 +183,19 @@ class Plugin:
     # Asyncio-compatible long-running code, executed in a task when the plugin is loaded
     async def _main(self):
         logger.info("Initializing...")
-        os.makedirs(PLUGIN_OPTIONS_PATH, exist_ok=True)
-        os.makedirs(BACKUP_PATH, exist_ok=True)
+
+        p_settings_path = _get_plugin_settings_path()
+        plugin_options_path = p_settings_path + "keyboard/"
+        backup_path = plugin_options_path + "backup/"
+        backup_env = backup_path + "environment"
+
+        os.makedirs(plugin_options_path, exist_ok=True)
+        os.makedirs(backup_path, exist_ok=True)
 
         # Backing up the environment file, just in case. On linux shit can go down fast...
-        if not os.path.isfile(BACKUP_ENV):
+        if not os.path.isfile(backup_env):
             logger.info("Backing up environment file..")
-            shutil.copy2(ENV_PATH, BACKUP_PATH)
+            shutil.copy2(ENV_PATH, backup_env)
 
 
     # Function called first during the unload process, utilize this to handle your plugin being removed
