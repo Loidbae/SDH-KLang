@@ -32,10 +32,10 @@ And that's exacly how this plugin works. Yes it's a bit boring and a dry read bu
 ## Screenshots
 
 ![](assets/menu.jpg)
-![](assets/select_layout.jpg)
-![](assets/layout_selected.jpg)
-![](assets/select_variant.jpg)
-![](assets/variant_selected.jpg)
+![](assets/select_layout.png)
+![](assets/layout_selected.png)
+![](assets/select_variant.png)
+![](assets/variant_selected.png)
 
 ## Troubleshooting
 

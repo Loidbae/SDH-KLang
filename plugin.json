@@ -5,6 +5,6 @@
   "publish": {
     "tags": ["keyboard", "root", "utility"],
     "description": "A plugin that lets the user change layout and variant of an external keyboard IN GAMING MODE. When starting a game in gaming mode, the game will read the default keyboard layout and variant from steamOS. If this is set to US *- which it is by default -* you are stuck with the QWERTY layout. This plugin resolves this problem.\nYou can now freely choose which layout SteamOs uses.\nThese changes not only affect your games but the steamOs and its gaming mode too!",
-    "image": "https://raw.githubusercontent.com/Loidbae/SDH-KLang/master/assets/menu.jpg"
+    "image": "https://raw.githubusercontent.com/Loidbae/SDH-KLang/master/assets/menu.png"
   }
 }
