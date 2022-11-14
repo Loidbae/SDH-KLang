@@ -7,7 +7,7 @@ from subprocess import check_output
 
 ENV_PATH = "/etc/environment"
 
-LOG_PATH = "/home/deck/homebrew/keyboard/log/"
+LOG_PATH = f"/home/{get_user()}/homebrew/keyboard/log/"
 
 KB_LAYOUT_FIELD = "XKB_DEFAULT_LAYOUT"
 KB_VARIANT_FIELD = "XKB_DEFAULT_VARIANT"
