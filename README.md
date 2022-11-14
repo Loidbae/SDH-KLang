@@ -2,7 +2,7 @@
 ---
 KLang! - **K**eyboard **L**ayout and V**a**riation Cha**ng**er is a plugin for [decky-loader](https://github.com/SteamDeckHomebrew/deckly-loader) which lets the user change layout and variant of external keyboards IN GAMING MODE.
 
-## What does this mean?
+## What does it do?
 
 When starting a game in gaming mode, the game will read the default keyboard layout and variant from steamOS. If this is set to US *- which it is by default -* you are stuck with the QWERTY layout. This plugin resolves this problem.
 
