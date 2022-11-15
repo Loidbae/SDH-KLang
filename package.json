@@ -1,7 +1,7 @@
 {
   "name": "decky-plugin-klang",
-  "version": "1.0.3",
-  "description": "A plugin that lets the user change layout and variant of an external keyboard IN GAMING MODE. When starting a game in gaming mode, the game will read the default keyboard layout and variant from steamOS. If this is set to US *- which it is by default -* you are stuck with the QWERTY layout. This plugin resolves this problem.\nYou can now freely choose which layout SteamOs uses.\nThese changes not only affect your games but the steamOs and its gaming mode too!",
+  "version": "1.0.4",
+  "description": "A plugin that lets the user change layout and variant of an external keyboard in gaming mode.",
   "scripts": {
     "build": "shx rm -rf dist && rollup -c",
     "watch": "rollup -c -w",
