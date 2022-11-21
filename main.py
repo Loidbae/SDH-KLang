@@ -79,8 +79,6 @@ def _set_current_kb_value(field, val):
 
     if val != "none":
         nline = field + "=" + val + "\n"
-    else:
-        nline = field + "=#\n"
 
 
     if fi != -1:
@@ -98,10 +96,10 @@ def _blank_variable(variable):
     # We obviously want to avoid that...
 
     env = _read_env()
-    fi = _find_field(KB_VARIANT_FIELD,env)
+    fi = _find_field(variable,env)
 
     if fi != -1:
-        env[fi] = variable + "=#\n"
+        env[fi] = ""
         
     _write_to_env(env)
 
